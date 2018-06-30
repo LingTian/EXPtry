@@ -22,7 +22,7 @@ if (typeof(webExtensionWallet) != "undefined") {
     
 } else {
     
-    layer.msg('请安装最新的星云钱包后刷新~ 点击游戏页面More Info也可以直接开启传送阵!');
+    layer.msg('请安装最新的星云钱包后刷新~ 点击下方钱包下载也可以直接下载～!');
     
 }
 
@@ -92,7 +92,7 @@ function newbattlelseedcallback(resp) {
     if (resp != 'Error: Transaction rejected by user') {
         setTimeout(applyseeddata, 2000);
         
-        layer.msg('应用链上随机种子到本场战斗..');
+        layer.msg('应用链上随机种子到本场战斗..如读取不成功可能是Nas节点不稳定');
         
     } else {
         layer.msg('放弃获得链上随机种子..');
